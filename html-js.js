@@ -21,8 +21,6 @@ let h1 = document.createElement("h1");
 
 ]
 for(i=0; i<cinta_blacna.length; i++){
-    let h1 = document.createElement('h1');
-    let textos = document.createTextNode('este wei se llama'+cinta_blacna[i].nombre+'y tiene'+cinta_blacna[i].edad+'años');
-    h1.appendChild(textos);
-    elbody.appendChild(h1);
+    let h1=$('<h1>'+'este wei se llama'+cinta_blacna[i].nombre+'y tiene'+cinta_blacna[i].edad+'años'+'</h1>');
+    $('#elbody').append(h1);
 }
